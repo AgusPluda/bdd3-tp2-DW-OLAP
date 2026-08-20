@@ -27,6 +27,7 @@ Católica de Santiago del Estero, Departamento Académico Rafaela. Junio de 2025
 - [Cómo levantarlo](#cómo-levantarlo)
 - [Sobre las credenciales](#sobre-las-credenciales)
 - [Qué haría distinto hoy](#qué-haría-distinto-hoy)
+- [Sobre el contexto de la entrega](#sobre-el-contexto-de-la-entrega)
 - [Contenido del repositorio](#contenido-del-repositorio)
 - [Créditos](#créditos)
 
@@ -380,6 +381,20 @@ una coma entre dos filas y el de `Contratos` usa `cliente_id` donde el esquema d
 en `DIM_Mercaderia`, `nombreServicio` en `DIM_Servicio` y `nombreContenedor` en
 `DIM_Tipo_Contenedor`, columnas que sí existen en el DW restaurable. El DDL debería salir de la
 base, no al revés.
+
+## Sobre el contexto de la entrega
+
+Los doce puntos anteriores son fallas reales y quedan documentados como tales, sin atenuantes.
+Pero vale una aclaración de contexto —no una excusa— sobre cómo se llegó a ellos: buena parte de
+las consultas que el grupo elevó a la cátedra durante el cuatrimestre no tuvieron respuesta, y
+el trabajo se terminó contra el tiempo, con soluciones de último momento donde el enunciado y la
+herramienta no alcanzaban a encajar solos. No fue una situación aislada de este grupo: fue lo
+que le tocó a la mayoría de los grupos de la materia, y la salida más común fue apoyarse en
+Power BI para mostrar el resultado final, evitando así buena parte de lo que hay que resolver
+para dejar el ETL y los cubos funcionando de punta a punta en SSIS y Analysis Services. Este
+grupo decidió no tomar ese atajo y sostener el stack completo tal como lo pedía la consigna,
+aunque eso significara entregar con las fallas de arriba a la vista en lugar de esconderlas
+detrás de un dashboard armado por fuera del Data Warehouse.
 
 ## Contenido del repositorio
 
