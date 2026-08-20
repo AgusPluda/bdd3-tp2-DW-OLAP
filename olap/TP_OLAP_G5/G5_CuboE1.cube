@@ -1,0 +1,573 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="a36bb8f7-59a5-4185-a10e-c14591df24f2" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>G5_CuboE1</ID>
+  <Name>G5_CuboE1</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="ab33878c-464a-41bc-8864-a84a10f21456">
+      <ID>DIM Tipo Contrato</ID>
+      <Name>DIM Tipo Contrato</Name>
+      <DimensionID>DIM Tipo Contrato</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="265dd03b-10ff-4746-b9ee-0021352b564e">
+          <AttributeID>Id Tipo Contrato</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="c5ed0a9a-6c45-4cf5-90be-269f71f927eb">
+      <ID>DIM Tipo Envio</ID>
+      <Name>DIM Tipo Envio</Name>
+      <DimensionID>DIM Tipo Envio</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="0ab43af4-dcaa-4f9f-a5e6-21b7e670aa34">
+          <AttributeID>Id Tipo Envio</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="bb92f138-aa2a-41a3-8800-e70c6179ed67">
+      <ID>DIM Servicio</ID>
+      <Name>DIM Servicio</Name>
+      <DimensionID>DIM Servicio</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="c7a44728-ee74-45d8-881c-bccaccf4efc6">
+          <AttributeID>Id Servicio</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="d8eb20b0-36fd-471a-b818-07973d93775d">
+      <ID>DIM Mercaderia</ID>
+      <Name>DIM Mercaderia</Name>
+      <DimensionID>DIM Mercaderia</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="88f7e27b-778c-483c-9fe7-85862b51a508">
+          <AttributeID>Id Mercaderia</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="d35e2767-1a28-4c52-bb0e-c5f3fac0aff7">
+      <ID>DIM Puerto</ID>
+      <Name>DIM Puerto</Name>
+      <DimensionID>DIM Puerto</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="52914d26-9f91-49b4-a3ae-14d34c7c95e0">
+          <AttributeID>Id Puerto</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="781c80cf-7849-4e29-8079-2baf90808592">
+          <AttributeID>Nombre</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="71b834eb-f5f2-427a-80be-ad2f9df88899">
+          <AttributeID>Pais</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="43b8a0d7-6f2b-40b3-b975-ae63828017d3">
+          <AttributeID>Region</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="a95ce7eb-aefb-47e2-8e70-d8fcbf5a0a11">
+          <HierarchyID>Jerarquía</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="0e6f2d3c-d08e-488d-a36f-516c0c0238b6">
+      <ID>DIM Cliente</ID>
+      <Name>DIM Cliente</Name>
+      <DimensionID>DIM Cliente</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="d638ae9e-aade-4bbe-ab64-10a93b25cca1">
+          <AttributeID>Id Cliente</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9593ee15-1fdd-49a3-811c-dd1566e11068">
+          <AttributeID>Nombre</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3a28c9df-a121-43a3-8800-3fd59a02bfd5">
+          <AttributeID>Direccion</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="329abf4d-42aa-43a5-9cb9-ba21a9ea10fc">
+          <AttributeID>Localidad</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1f5aa035-bc07-459a-aa44-097dc8a2be8b">
+          <AttributeID>Pais</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="86ffc97f-f8de-45c7-ae14-26dcfefcab9f">
+          <AttributeID>Region</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="f6dc5f04-0f98-46fb-9b1c-fa8492f826cb">
+          <HierarchyID>Jerarquía 1</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="a8bfbccb-daa3-4bf2-baef-f1798bbc6fb1">
+      <ID>DIM Tiempo</ID>
+      <Name>DIM Tiempo</Name>
+      <DimensionID>DIM Tiempo</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="04adebf6-6fe8-4100-bf4c-e96fb01cd26d">
+          <AttributeID>Id Tiempo</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c315e6eb-0518-4d78-b458-5a265896e989">
+          <AttributeID>Anio</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8b68bab5-373d-4766-b53e-38ccdf1e2d12">
+          <AttributeID>Mes</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="49163285-5ff5-452e-b8b3-4b8c78efe918">
+          <AttributeID>Dia</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="9e7b0ff6-3f6b-4c63-ae7e-6a7e10f7f743">
+          <HierarchyID>Jerarquía</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="617f3628-b642-4ee0-a382-3c754148eed9">
+      <ID>DIM Estado Contrato</ID>
+      <Name>DIM Estado Contrato</Name>
+      <DimensionID>DIM Estado Contrato</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="026532ff-72c6-474d-b90e-5b7d7e06aa68">
+          <AttributeID>Id Estado Contrato</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="cb0556df-8d9e-43dd-af91-9523e56f4722">
+      <ID>DIM Tipo Contrato</ID>
+      <Name>DIM Tipo Contrato</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="699bce9b-d15f-4416-8c27-78c177a01bda">
+          <ID>Recuento DIM Tipo Contrato</ID>
+          <Name>Recuento DIM Tipo Contrato</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="d5d66d43-d861-4163-86b5-5d3e30e0997c">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="f44abc23-61d8-4519-9cc5-aae513dbac3d">
+              <TableID>dbo_DIM_Tipo_Contrato</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="22b55d38-ceeb-4dbd-8208-3c05ea072b92">
+          <CubeDimensionID>DIM Tipo Contrato</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="7e035837-6436-464d-846a-6b4919f2f580">
+              <AttributeID>Id Tipo Contrato</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b11ac1fc-fccc-4b6c-a134-6809de9d4e81">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1fe6e28c-098d-4996-a6eb-4a9161f7b06b">
+                    <TableID>dbo_DIM_Tipo_Contrato</TableID>
+                    <ColumnID>Id_TipoContrato</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="c1f1bdd3-07da-4a01-838e-ac98b3d9d4e3">
+      <ID>DIM Tipo Envio</ID>
+      <Name>DIM Tipo Envio</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="87ad8aa6-f377-4d33-8b9f-b41ba6d2a21c">
+          <ID>Recuento DIM Tipo Envio</ID>
+          <Name>Recuento DIM Tipo Envio</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="4581a631-4550-4449-b4b3-5e3c87898065">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="6d5743e2-0aeb-4fc5-aef2-4137051990b1">
+              <TableID>dbo_DIM_Tipo_Envio</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="f6403e09-5766-4c29-a9f0-b15aae59cce0">
+          <CubeDimensionID>DIM Tipo Envio</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="8cddd1fb-3d06-4cc4-aba5-4114691b9b23">
+              <AttributeID>Id Tipo Envio</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="110cfcda-8787-4df0-ab84-a8cf09897e76">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4bb0a6e7-2a3e-47d3-b7f8-b86b019a0ec6">
+                    <TableID>dbo_DIM_Tipo_Envio</TableID>
+                    <ColumnID>Id_TipoEnvio</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="c4f83cd3-1230-4685-be42-433b1e8a35e8">
+      <ID>DIM Servicio</ID>
+      <Name>DIM Servicio</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="d2596ac9-009d-4a3d-9ca6-150223524543">
+          <ID>Id Viaje</ID>
+          <Name>Id Viaje</Name>
+          <Source dwd:design-time-name="7b2334a9-2831-4c91-8e6e-694b1393af0e">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="45a9611e-84e1-4b79-a752-36771392e5eb">
+              <TableID>dbo_DIM_Servicio</TableID>
+              <ColumnID>Id_Viaje</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="907f8dc9-c82f-4529-81d4-d67ca6f44e9f">
+          <ID>Id Buque</ID>
+          <Name>Id Buque</Name>
+          <Source dwd:design-time-name="aa0b2aee-0f7e-4d43-a754-2ad25702ca83">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="cd92088b-1883-492c-8e68-28dc5f0d6b40">
+              <TableID>dbo_DIM_Servicio</TableID>
+              <ColumnID>Id_Buque</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="92fd587d-5579-4c51-910d-5b9ced150645">
+          <CubeDimensionID>DIM Servicio</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="fd8d5a20-064b-4860-b0ee-4051f06a1052">
+              <AttributeID>Id Servicio</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e48b38f3-5ac1-401f-a05d-27274e89608c">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="44be9cfb-d847-4b2c-9478-579713b9dbd1">
+                    <TableID>dbo_DIM_Servicio</TableID>
+                    <ColumnID>Id_Servicio</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="7265f95b-edec-4280-8ab5-14d987699a54">
+      <ID>DIM Mercaderia</ID>
+      <Name>DIM Mercaderia</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="456e71f9-72b7-4432-8e3f-ed2b0b075cfb">
+          <ID>Peso</ID>
+          <Name>Peso</Name>
+          <Source dwd:design-time-name="15a096d0-0990-49d7-aa4c-be7490a94c80">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="f7c339c4-b9c8-40ee-8c92-937f98d6db1e">
+              <TableID>dbo_DIM_Mercaderia</TableID>
+              <ColumnID>Peso</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="df4e1386-277d-4e35-b41f-1b4bd0d7d73f">
+          <CubeDimensionID>DIM Mercaderia</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="060d3350-e1e9-4bae-9666-e93baf7a2cef">
+              <AttributeID>Id Mercaderia</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="2d7fae47-7caa-4944-90ca-5d3554850b9b">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="56581d0c-578f-43eb-a6c9-a63e8f4b79f9">
+                    <TableID>dbo_DIM_Mercaderia</TableID>
+                    <ColumnID>Id_Mercaderia</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="8fdab5ff-8ee1-4e99-86c4-666c3041cf10">
+      <ID>FT Contratos</ID>
+      <Name>FT Contratos</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="6bcd5445-64df-4332-a8df-a9e8c1d15717">
+          <ID>Cant Kg</ID>
+          <Name>Cant Kg</Name>
+          <Source dwd:design-time-name="e51a8646-cc88-4233-b258-e28e7d1bb377">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="c27a2600-c784-4d37-bf65-ae44e1426449">
+              <TableID>dbo_FT_Contratos</TableID>
+              <ColumnID>Cant_kg</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="13a7e374-6554-4092-9514-b77aa57ad54f">
+          <ID>Cant Teus</ID>
+          <Name>Cant Teus</Name>
+          <Source dwd:design-time-name="b3fec234-81d7-4bf4-a66a-78b0a757a49f">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="2ea35764-9619-4646-8e9a-49ee2b675420">
+              <TableID>dbo_FT_Contratos</TableID>
+              <ColumnID>Cant_teus</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="9a81aea0-cb9c-48c7-b336-951ea8c4c702">
+          <ID>Cant Contratos</ID>
+          <Name>Cant Contratos</Name>
+          <Source dwd:design-time-name="dd75e6e7-06b5-4dd1-a1c5-04421247f96b">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="07ac96cc-bdc9-474f-852e-d0d5627eba94">
+              <TableID>dbo_FT_Contratos</TableID>
+              <ColumnID>Cant_contratos</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="4371b74f-e1c0-4f0e-95bd-4568242350de">
+          <ID>Recuento FT Contratos</ID>
+          <Name>Recuento FT Contratos</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="6a3f890c-00c9-4740-80c3-31b08c83e051">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="5f38a4b4-5d7f-44f2-83ce-ffa540ead510">
+              <TableID>dbo_FT_Contratos</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e1e7325b-b9fb-4243-bb99-d68700493ad2">
+          <CubeDimensionID>DIM Puerto</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="5194ef81-5f24-485b-895f-91da09b5e537">
+              <AttributeID>Id Puerto</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="8b6356b0-b801-4f52-8aca-8b6a8b5aeff5">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="113e17fa-ca77-49d4-9ba3-fcf5c4c51165">
+                    <TableID>dbo_FT_Contratos</TableID>
+                    <ColumnID>Id_Puerto</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="dd307c0b-9797-4d8c-8d35-857d13f997ca">
+          <CubeDimensionID>DIM Cliente</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="cc133be0-6379-469f-91c0-7eed0ced4b29">
+              <AttributeID>Id Cliente</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a383267d-2b6b-4b5f-8a7d-436a00a807fb">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c608a3d4-61ef-491e-88bb-49ab46e58de6">
+                    <TableID>dbo_FT_Contratos</TableID>
+                    <ColumnID>Id_Cliente</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="39448c11-2247-43a7-837b-9e7fed2e069d">
+          <CubeDimensionID>DIM Tiempo</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="db7965df-ebc0-43e3-b698-c29bd27125a9">
+              <AttributeID>Id Tiempo</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="cfce2941-c451-4397-97fd-c0e8984fd115">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="98036fe9-684a-4957-9092-8e3c2bd027fd">
+                    <TableID>dbo_FT_Contratos</TableID>
+                    <ColumnID>Id_Tiempo</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="9ff81d39-4db3-40aa-86f4-e9da4e9858d3">
+          <CubeDimensionID>DIM Servicio</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9fbf6980-d23f-4f6b-bf68-5aff2cf0c232">
+              <AttributeID>Id Servicio</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1fc6de3f-fee7-4c5e-9933-e4e82efa32f0">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f7af623b-221c-4c89-8170-b0e686acde20">
+                    <TableID>dbo_FT_Contratos</TableID>
+                    <ColumnID>Id_Servicio</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="26a33098-746c-4391-8750-c93b2daede9b">
+          <CubeDimensionID>DIM Estado Contrato</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="318816a6-9b70-4d5a-865d-552a90922f59">
+              <AttributeID>Id Estado Contrato</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="9079003a-cb87-494d-9d74-8557238c3258">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b17e216c-f7f0-4ce2-9a48-20905ffce7cc">
+                    <TableID>dbo_FT_Contratos</TableID>
+                    <ColumnID>Id_EstadoContrato</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="476cf0f1-949b-45dc-aad9-95836c6fd0ca">
+          <CubeDimensionID>DIM Mercaderia</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="28642708-7915-470e-b5fc-634c41372b7c">
+              <AttributeID>Id Mercaderia</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="fb0dcf7c-5556-48b9-b616-7d9e073f9064">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="31aab924-c1d4-45d7-b778-3df000a30965">
+                    <TableID>dbo_FT_Contratos</TableID>
+                    <ColumnID>Id_Mercaderia</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="8055c81e-736c-4987-b114-ebf531be0cd1">
+          <CubeDimensionID>DIM Tipo Contrato</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3f4e5caf-795d-47b0-818d-d542e3d31eb7">
+              <AttributeID>Id Tipo Contrato</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b43c5918-c03d-4ef5-bd50-564ac8803a57">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="cc6c5002-fa87-41c2-84a8-f9a9f718cd6f">
+                    <TableID>dbo_FT_Contratos</TableID>
+                    <ColumnID>Id_TipoContrato</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="2d8a7301-f57a-4ef4-902c-8b44b1d9db59">
+          <CubeDimensionID>DIM Tipo Envio</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="4ce2bd59-a66c-4dd3-ba81-bfc56e02c74f">
+              <AttributeID>Id Tipo Envio</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="bfe107e5-ec9a-4b31-8706-3c828a7fa8c7">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9f3156bb-76ea-46a2-8d68-6fb4e3f5836d">
+                    <TableID>dbo_FT_Contratos</TableID>
+                    <ColumnID>Id_TipoEnvio</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="5558e248-25b6-488c-91df-4aec2deea7d7">
+    <DataSourceViewID>Modelo_DW</DataSourceViewID>
+  </Source>
+</Cube>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="DW"
+  DTS:DTSID="{03B36F70-F432-46DB-84EF-84AE92BBBD79}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=SQLSERVER_CATEDRA;User ID=sa;Initial Catalog=DW;Provider=SQLOLEDB.1;Auto Translate=False;Application Name=SSIS-TP_G5-{03B36F70-F432-46DB-84EF-84AE92BBBD79}SQLSERVER_CATEDRA.DW.sa;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1"></DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

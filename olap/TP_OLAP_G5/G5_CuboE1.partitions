@@ -1,0 +1,105 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="4eabc5ca-dd6f-4376-8641-77cac40b0f17" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>G5_CuboE1</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>DIM Tipo Contrato</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="e3e806a1-4b28-49f7-8378-1f4bff207bd7">
+          <ID>DIM Tipo Contrato</ID>
+          <Name>DIM Tipo Contrato</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="f58d01fe-392c-468f-a656-88b016d84965">
+            <DataSourceViewID>Modelo_DW</DataSourceViewID>
+            <TableID>dbo_DIM_Tipo_Contrato</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>DIM Tipo Envio</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="c015b8fe-6759-4a88-afe4-2b5c7eaaeb50">
+          <ID>DIM Tipo Envio</ID>
+          <Name>DIM Tipo Envio</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="ffdeeb09-6968-4c1f-bf98-457e178f7ae9">
+            <DataSourceViewID>Modelo_DW</DataSourceViewID>
+            <TableID>dbo_DIM_Tipo_Envio</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>DIM Servicio</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="e3891092-d7d8-4ab0-89a2-731ba1e00086">
+          <ID>DIM Servicio</ID>
+          <Name>DIM Servicio</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="13b7e901-29aa-431f-8dda-b3692b3d8084">
+            <DataSourceViewID>Modelo_DW</DataSourceViewID>
+            <TableID>dbo_DIM_Servicio</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>DIM Mercaderia</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="3924b318-cd39-4151-80b0-b0d811932756">
+          <ID>DIM Mercaderia</ID>
+          <Name>DIM Mercaderia</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="0be9dbd5-c950-44a8-9d0c-ff73c724d586">
+            <DataSourceViewID>Modelo_DW</DataSourceViewID>
+            <TableID>dbo_DIM_Mercaderia</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>FT Contratos</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="87eddcc6-99b2-4c56-9498-7e45687c2b88">
+          <ID>FT Contratos</ID>
+          <Name>FT Contratos</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="9e3ad12d-35aa-4b95-9294-535d4fbd4bd2">
+            <DataSourceViewID>Modelo_DW</DataSourceViewID>
+            <TableID>dbo_FT_Contratos</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

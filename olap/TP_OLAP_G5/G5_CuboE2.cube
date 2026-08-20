@@ -1,0 +1,286 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="5f58a8ad-fdbc-460b-8d1f-c938a2e723d3" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>G5_CuboE2</ID>
+  <Name>G5_CuboE2</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="17155081-fed4-4037-a644-b4103a4f0a4e">
+      <ID>DIM Tipo Contenedor</ID>
+      <Name>DIM Tipo Contenedor</Name>
+      <DimensionID>DIM Tipo Contenedor</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="ad8a3a53-13a9-46d1-b104-a752b136efdf">
+          <AttributeID>Id Tipo Contenedor</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="b3d6c6ef-ca4d-4999-9525-bddc117734a0">
+      <ID>DIM Estado Contenedor</ID>
+      <Name>DIM Estado Contenedor</Name>
+      <DimensionID>DIM Estado Contenedor</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="e2a5b259-be55-41f7-b932-16096414af85">
+          <AttributeID>Id Estado Contenedor</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="86892dde-eb05-4baf-9ca5-e5936167b33f">
+      <ID>DIM Puerto</ID>
+      <Name>DIM Puerto</Name>
+      <DimensionID>DIM Puerto</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="90c4e2b5-46a8-43cd-b323-7e35d9d2462d">
+          <AttributeID>Id Puerto</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5d5ab03a-b14b-412e-8fc2-104d2895f82e">
+          <AttributeID>Nombre</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="28ac5348-d65d-48f5-bc6e-d86ebce9e9f0">
+          <AttributeID>Pais</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a5b591b6-6adf-4e49-8f41-879beb9331c2">
+          <AttributeID>Region</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="427a09b8-288a-4a8b-975e-77832c92b93f">
+          <HierarchyID>Jerarquía</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="bbc4d593-17e8-4f84-b178-dc93a68f8797">
+      <ID>DIM Tiempo</ID>
+      <Name>DIM Tiempo</Name>
+      <DimensionID>DIM Tiempo</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="fde05a98-ef82-49d2-bdde-0b1a09e8ace4">
+          <AttributeID>Id Tiempo</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2d327600-6777-4551-ba35-c3cb0dcef1db">
+          <AttributeID>Anio</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="db8d190b-974b-4d06-962d-5abb90aa6c9b">
+          <AttributeID>Mes</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="effaf27a-e513-408e-8aa6-41eb2271bcc8">
+          <AttributeID>Dia</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="64fb91da-bcfb-4e6c-ba4d-d7a47ae87555">
+          <HierarchyID>Jerarquía</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="99264a69-b8db-4dcb-b1fd-a129edda3619">
+      <ID>FT Inventario Contenedores</ID>
+      <Name>FT Inventario Contenedores</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="185441cd-53bf-40ce-b070-b72de22ca952">
+          <ID>Cant Contenedores</ID>
+          <Name>Cant Contenedores</Name>
+          <Source dwd:design-time-name="9c8767dc-6967-494e-b9cc-0c5d0234bd18">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="7726687f-80d2-45f0-ac83-c31747aafcf1">
+              <TableID>dbo_FT_Inventario_Contenedores</TableID>
+              <ColumnID>Cant_Contenedores</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="0e41bb1d-0136-490f-aba8-cb695f15fe54">
+          <ID>Recuento FT Inventario Contenedores</ID>
+          <Name>Recuento FT Inventario Contenedores</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="f7ecd141-8730-4e1e-b9b6-3024c3cc44f2">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="24e5d26c-1e3c-4441-96ea-ea5c53e7a6a8">
+              <TableID>dbo_FT_Inventario_Contenedores</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="08699c40-879c-406f-a35e-97156ac342da">
+          <CubeDimensionID>DIM Tipo Contenedor</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="a0dbbba6-8372-478e-8d3c-701eb78ea636">
+              <AttributeID>Id Tipo Contenedor</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="47203cae-3f75-401e-b0ba-e53dc1e1e14d">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5ff88edd-228c-428a-a31a-d83cb0e4a141">
+                    <TableID>dbo_FT_Inventario_Contenedores</TableID>
+                    <ColumnID>Id_TipoContenedor</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b9c60c0f-8e49-41c7-84e5-adcf8ca8d73f">
+          <CubeDimensionID>DIM Estado Contenedor</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="03f15904-f5a6-4bbe-acbb-79f223c491d0">
+              <AttributeID>Id Estado Contenedor</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1e1b1f95-1f83-4a0b-b643-a10724490626">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="88bebc98-5197-486d-b9a0-c42730676e07">
+                    <TableID>dbo_FT_Inventario_Contenedores</TableID>
+                    <ColumnID>Id_EstadoContenedor</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="10de815e-949e-4fa7-b4ae-1b29f2c2c224">
+          <CubeDimensionID>DIM Puerto</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="404d6096-43e1-4db8-8a8a-c9f8b61cf36a">
+              <AttributeID>Id Puerto</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="fba02073-c57d-4706-94aa-3700517b573b">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="be995651-1119-41d1-9b85-4c449e0a9b2f">
+                    <TableID>dbo_FT_Inventario_Contenedores</TableID>
+                    <ColumnID>Id_Puerto</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="3a53fa10-0552-4564-a349-de01cf116625">
+          <CubeDimensionID>DIM Tiempo</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e2e3d4f9-adbc-4fef-86ab-f3c6d8600252">
+              <AttributeID>Id Tiempo</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1e5a1fb8-a114-4702-94af-70ac8183e38a">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="252bc611-d401-4b3e-96f2-9d57b0818495">
+                    <TableID>dbo_FT_Inventario_Contenedores</TableID>
+                    <ColumnID>Id_Tiempo</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="4a121270-4fad-4d15-9dff-a1d42ff4bf00">
+      <ID>DIM Tipo Contenedor</ID>
+      <Name>DIM Tipo Contenedor</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="1dd868e9-4e07-41f1-9529-f32a33a1b62c">
+          <ID>Tamanio</ID>
+          <Name>Tamanio</Name>
+          <Source dwd:design-time-name="07fb1647-f73d-4846-9186-2bc70f2acbe7">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="45d56ed3-cf8a-4d8f-a8b6-b8145d85498d">
+              <TableID>dbo_DIM_Tipo_Contenedor</TableID>
+              <ColumnID>Tamanio</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="24810cd1-f817-484f-b81e-2c55b884377e">
+          <ID>Recuento DIM Tipo Contenedor</ID>
+          <Name>Recuento DIM Tipo Contenedor</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="97674d48-ce7e-40b9-be4b-8e9e09df1ba4">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="2cfaa8a5-5d4f-4b70-974f-b8335ba03a42">
+              <TableID>dbo_DIM_Tipo_Contenedor</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="1067213e-f99e-445d-aed0-908cd056bc0e">
+          <CubeDimensionID>DIM Tipo Contenedor</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="925c9f8b-2de9-45d8-bf7b-4637dfca96d6">
+              <AttributeID>Id Tipo Contenedor</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="f234ed24-67a1-42b9-9a45-909252778891">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="711c8875-3a5b-45d5-afb2-f285a460838d">
+                    <TableID>dbo_DIM_Tipo_Contenedor</TableID>
+                    <ColumnID>Id_TipoContenedor</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="a6e170c0-a065-46f2-85cd-ef609395363d">
+    <DataSourceViewID>Modelo_DW</DataSourceViewID>
+  </Source>
+</Cube>

@@ -1,0 +1,26 @@
+# Artefactos de compilación de Visual Studio / SSDT
+.vs/
+bin/
+obj/
+*.ispac
+*.asdatabase
+*.configsettings
+*.deploymentoptions
+*.deploymenttargets
+
+# Copias en conflicto de sincronización en la nube
+* (conflicted*
+*[conflicted*
+
+# Temporales de Office
+~$*
+
+# Sistema operativo
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Editores
+.vscode/
+.idea/
+*.swp
