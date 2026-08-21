@@ -351,20 +351,15 @@ recalculan desde el origen completo en cada corrida.
 
 **8. `DIM_Tiempo` no tiene proceso de carga.** No hay flujo que la alimente: se cargó a mano. Una
 dimensión de calendario se genera con un script recursivo, y de paso se le agregan trimestre,
-semana, día de la semana y bandera de fin de semana —que es lo que habría permitido responder la
-consulta 2 de la notebook ("esta semana") como estaba planteada.
+semana, día de la semana y bandera de fin de semana.
 
-**9. La consulta 2 de la notebook no filtra una semana.** Filtra `Dia.isin(range(1, 30))`, que es
-el mes entero de junio. Sin campo de semana en la dimensión no había forma limpia de expresarlo;
-con él, es un `WHERE`.
-
-**10. Las tablas de negocio vivían en `master`.** Es lo que revela el backup de la base
+**9. Las tablas de negocio vivían en `master`.** Es lo que revela el backup de la base
 operativa, y lo que explica que el paquete tenga un administrador de conexión llamado
 `master.sa` resolviendo 28 de sus 53 conexiones. Ninguna tabla de aplicación debería estar ahí:
 `master` guarda la configuración del servidor, se restaura de otra manera y no se respalda con
 los mismos criterios.
 
-**11. Los scripts SQL entregados no ejecutan tal como están.**
+**10. Los scripts SQL entregados no ejecutan tal como están.**
 [`sql/00_esquema_operacional_borrador.sql`](sql/00_esquema_operacional_borrador.sql) declara
 `estado_contrato_id` dos veces en `Contratos`, tiene una FK a `mercaderia_id` sobre una columna
 que la tabla no define, referencia `Puertos_de_Llamada` en lugar de `Puertos_de_Llamada_Viajes`
@@ -374,7 +369,7 @@ y crea las tablas antes que aquellas a las que apuntan.
 una coma entre dos filas y el de `Contratos` usa `cliente_id` donde el esquema define
 `cliente_remitente_id`. Están marcados con `[BUG]` en el archivo consolidado.
 
-**12. El modelo cambió de nombre a mitad de camino y el DDL no siguió.** El paquete SSIS carga
+**11. El modelo cambió de nombre a mitad de camino y el DDL no siguió.** El paquete SSIS carga
 `DIM_Viaje` y escribe `FT_Contratos.Id_Viaje`; el DSV y los cubos usan `DIM_Servicio` e
 `Id_Servicio`; la notebook, corrida antes del renombre, imprime `Id_Viaje` en su esquema. El
 `creacionDW.sql` de la entrega quedó desactualizado respecto de la base real: le faltan `Peso`
@@ -384,7 +379,7 @@ base, no al revés.
 
 ## Sobre el contexto de la entrega
 
-Los doce puntos anteriores son fallas reales y quedan documentados como tales, sin atenuantes.
+Los once puntos anteriores son fallas reales y quedan documentados como tales, sin atenuantes.
 Pero vale una aclaración de contexto —no una excusa— sobre cómo se llegó a ellos: buena parte de
 las consultas que el grupo elevó a la cátedra durante el cuatrimestre no tuvieron respuesta, y
 el trabajo se terminó contra el tiempo, con soluciones de último momento donde el enunciado y la
